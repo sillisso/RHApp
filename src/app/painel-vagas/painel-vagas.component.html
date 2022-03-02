@@ -1,0 +1,11 @@
+<h2> Cadastro / Edição de Vagas</h2>
+
+<form class="form-floating">
+    <label>Id</label> <input type="text" name="id" [(ngModel)]="vaga.id"><br>
+    <label>Nome</label> <input type="text" name="nome" [(ngModel)]="vaga.nome"><br>
+    <label>Descricao</label> <input type="text" name="descricao" [(ngModel)]="vaga.descricao"><br>
+    <label>Salario</label> <input type="text" name="salario" [(ngModel)]="vaga.salario"><br>
+    <button type="button" (click)="cadastrar()">Cadastrar</button>
+    <button type="button" (click)="atualizar(vaga.id)">Atualizar</button>
+    <button type="button" (click)="excluir(vaga.id)">Excluir</button>
+</form>
